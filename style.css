@@ -20,10 +20,11 @@ header
 }
 header .logo
 {
-  font-size: 1em;
-  color: #fff;
+  font-size: 4em;
+  color: #ff0080;
   text-transform: uppercase;
-  cursor: pointer;
+  cursor: progress;
+  opacity: 70%;
 }
 .toggle
 {
