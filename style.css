@@ -20,11 +20,11 @@ header
 }
 header .logo
 {
-  font-size: 15em;
+  font-size: 13em;
   color: #ff0080;
   text-transform: uppercase;
   cursor: progress;
-  opacity: 70%;
+  opacity: 50%;
 }
 .toggle
 {
@@ -203,7 +203,7 @@ header .logo
 }
 #muteButton {
   position: absolute;
-  top: 100px;
+  top: 50px;
   right: 1130px;
   border: none;
   color: white;
