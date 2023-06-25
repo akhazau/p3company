@@ -6,63 +6,65 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css" type="text/css">
   <title>P3 Company</title>
-   <style>
-    body {
-      margin: 0;
-      padding: 0;
-    }
-
-    #video-container {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-    }
-
-    #video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    #contact-info {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      color: white;
-      font-size: 18px;
-    }
-  </style>
+  <link rel="icon" href="ico.png" type="image/x-icon">
+  <script type="text/javascript">
+    // JavaScript code here
+  </script>
   </head>
   <body>
      <section class="showcase">
-       <video id="showreel" src="introduce.av1.mp4"></video>
+       <header>
+         <h2 class="logo">ARTTOM KHAZOV</h2>
+
+         <h2>COLORIST</h2>
+         <div class="toggle"></div>
+       </header>
+       <video id="showreel" src="bgv.webm" muted loop autoplay></video>
  <div class="overlay"></div>
        <div class="text">
-         <h2>Motion Picture Industry</h2>
+         <h2>Perfect Fashion Show Soundtrack</h2>
 
-         <body>
-  <div id="video-container">
-    <video id="video" autoplay controls>
-      <source src="introduce.av1.mp4" type="video/mp4">
-    </video>
-  </div>
+         <p>A sound elevating your fashion show, initiating a new era of style,</p>
+         <p>and revolutionizing the design world.</p>
 
-  <div id="contact-info">
-    <h2>Контакты</h2>
-    <p>Ваше имя: Имя</p>
-    <p>Электронная почта: example@example.com</p>
-    <p>Телефон: 123-456-7890</p>
-  </div>
-</body>
 
-         <a href="#">Contact</a>
-  
+         <a href="#">Order for a show</a>
+         <button id="muteButton">Unmute</button> <!-- Add a button for muting/unmuting the video -->
        </div>
+       <ul class="social">
+         <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+         <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+         <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+       </ul>
      </section>
-    
-	
+     <div class="menu">
+       <ul>
+         <li><a href="#">Information</a></li>
+         <li><a href="services.html">Service Packages</a></li>
+         <li><a href="audio-player/player.html">Licensed tracks</a></li>
+         <li><a href="#">Contacts</a></li>
+       </ul>
+     </div>
+  <script>
+      const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+      const video = document.getElementById('showreel');
+      const muteButton = document.getElementById('muteButton');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      });
+
+      muteButton.addEventListener('click', () => {
+        if (video.muted) {
+          video.muted = false; // Unmute the video
+          muteButton.textContent = 'Mute'; // Change the button text to "Mute"
+        } else {
+          video.muted = true; // Mute the video
+          muteButton.textContent = 'Unmute'; // Change the button text to "Unmute"
+        }
+      });
+  </script>
   </body>
 </html>
