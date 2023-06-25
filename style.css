@@ -82,9 +82,13 @@ header .logo
   left: 0;
   z-index: 1000;
 }
-.showcase .social li {
+.showcase .social li 
+{
+  color: #fff;
+  line-height: 1.9em;
+  text-transform: uppercase;
+  opacity: 50%;
 }
-
 .text h2
 {
   font-size: 1em;
