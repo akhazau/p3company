@@ -78,7 +78,7 @@ header .logo
 .text
 {
   position: relative;
-  left: 70px;
+  left: 0;
   z-index: 10;
 }
 .showcase .social li {
